@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculate Your Marks + Percentage</title>
     <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" type="image/png" href="icons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="icons/favicon.svg" />
+    <link rel="shortcut icon" href="icons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Marks Calculator" />
+    <link rel="manifest" href="icons/site.webmanifest" />
 </head>
+
 <body>
     <div class="background">
         <div class="container">
             <div class="box">
                 <form onsubmit="calculateMarks(event)" class="calculate-form" id="calculateForm">
-                    <input type="number" required min="0" max="100" name="maths" placeholder="Maths"/>
-                    <input type="number" required min="0" max="100" name="english" placeholder="English"/>
-                    <input type="number" required min="0" max="100" name="hindi" placeholder="Hindi"/>
-                    <input type="number" required min="0" max="100" name="science" placeholder="Science"/>
+                    <input type="number" required min="0" max="100" name="maths" placeholder="Maths" />
+                    <input type="number" required min="0" max="100" name="english" placeholder="English" />
+                    <input type="number" required min="0" max="100" name="hindi" placeholder="Hindi" />
+                    <input type="number" required min="0" max="100" name="science" placeholder="Science" />
                     <button type="submit" class="primary-btn">Calculate</button>
                 </form>
                 <p class="result" id="result"></p>
@@ -29,4 +38,5 @@
 
     <script src="/index.js"></script>
 </body>
+
 </html>
